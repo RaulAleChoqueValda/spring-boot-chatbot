@@ -125,6 +125,7 @@ public class BotFilmSearchBlUnitTest {
         assertEquals(botResponse.size(), 4, "Debería retornar unicamente un mensaje");
         assertTrue(botResponse.get(0).equals("Encontré las siguientes películas:"), "El mensaje para pelicuals encontradsa es incorrecto");
         assertTrue(botResponse.get(1).contains("viento se llevo"), "La primera película es incorrecta: " + botResponse.get(1) + "||");
+        System.out.println(botResponse.get(1));
         assertTrue(botResponse.get(2).contains("Pinochio"), "La segunda película es incorrecta"+ botResponse.get(2) + "||");
         assertTrue(botResponse.get(3).contains("libro de la selva"), "La tercer película es incorrecta"+ botResponse.get(3) + "||");
 
